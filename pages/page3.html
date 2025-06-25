@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Monitoria</title>
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/index2.css">
     <script src="../scripts/script.js" defer></script>
 </head>
 <body>
+
+    <nav class="menu">
+        <a href="../index.html">Início</a>
+        <a href="page3.html">Agendar Monitoria</a>
+        <a href="page2.html">Monitorias Agendadas</a>
+    </nav>
+
     <h1>Adicionar Monitoria</h1>
-    <form id="form-monitoria">
-        <input id="disciplina" type="text" placeholder="Disciplina" required />
-        <input id="monitor" type="text" placeholder="Monitor" required />
-        <input id="data" type="date" required />
-        <input id="horarioInicio" type="time" required />
-        <button type="submit">Adicionar</button>
-    </form>
+    <div class="container">
+        <form id="form-monitoria">
+            <input id="disciplina" type="text" placeholder="Disciplina" required />
+            <input id="monitor" type="text" placeholder="Monitor" required />
+            <input id="data" type="date" required />
+            <input id="horarioInicio" type="time" required />
+            <input id="local" type="text" placeholder="Local" required />
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
 </body>
 </html>
-

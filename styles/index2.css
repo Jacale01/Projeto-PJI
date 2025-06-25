@@ -1,61 +1,121 @@
-/* Estilo para ambas as páginas (page2.html e page3.html) */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background: #f7f7f7;
+    color: #222;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    color: #333;
 }
 
 h1 {
-    color: #2c3e50;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #222;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background-color: #ecf0f1;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-form {
+form, .container {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 18px;
 }
 
-input[type="text"], input[type="date"], input[type="time"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
+input, button, select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #d0d0d0;
+    font-size: 1rem;
+    background: #fafafa;
+    color: #222;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #a0a0a0;
 }
 
 button {
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    background: #e0e0e0;
+    color: #222;
+    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
+    letter-spacing: 1px;
+    border: 1px solid #d0d0d0;
+    transition: background 0.2s, color 0.2s;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background: #d0d0d0;
+    color: #111;
+}
+
+a {
+    color: #3366cc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #003399;
+    text-decoration: underline;
+}
+
+ul #lista-monitorias {
+    list-style: none;
+    padding: 0;
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+ul#lista-monitorias li {
+    background: #fff;
+    margin-bottom: 14px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid #e0e0e0;
+    transition: border-color 0.2s;
+}
+
+ul #lista-monitorias li:hover {
+    border-color: #b0b0b0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 18px 0 10px 0;
+    margin-bottom: 24px;
+}
+
+.menu a {
+    color: #3366cc;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu a:hover,
+.menu a:focus {
+    background: #f0f4fa;
+    color: #003399;
 }
