@@ -3,46 +3,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-  }
-  
-  body {
+}
+
+body {
     background-image: url(../img/livros.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-  }
-  
-  header {
+}
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
     padding: 10px 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
+}
 
-  .menu-icone {
+.menu-icone {
     font-size: 24px;
     cursor: pointer;
-  }
-  
-  .logo {
+}
+
+.logo {
     height: 50px;
-  }
-  
-  .title {
+}
+
+.title {
     font-weight: bold;
     font-size: 24px;
     margin-left: 20px;
-  }
-  
-  .user {
+}
+
+.user {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .user-icon {
+}
+
+.user-icon {
     background: #ccc;
     border-radius: 50%;
     width: 32px;
@@ -50,17 +50,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  main {
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 80px);
     padding: 20px;
-  }
-  
-  .glassCard {
+}
+
+.glassCard {
     width: 100%;
     max-width: 700px;
     background: rgba(255, 255, 255, 0.92);
@@ -75,49 +75,49 @@
     align-items: center;
     justify-content: flex-start;
     transition: box-shadow 0.2s, border-color 0.2s;
-  }
+}
 
-  .glassCard h1,
-  .glassCard .welcomeTitle {
+.glassCard h1,
+.glassCard .welcomeTitle {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 18px;
     color: #222;
     letter-spacing: 0.5px;
-  }
+}
 
-  .glassCard p {
+.glassCard p {
     text-align: center;
     margin-bottom: 18px;
     color: #333;
     line-height: 1.6;
-  }
+}
 
-  .glassCard .featuresList {
+.glassCard .featuresList {
     margin: 24px 0 0 0;
     padding-left: 20px;
     font-size: 1.1rem;
     color: #222;
-  }
+}
 
-  .glassCard .featuresList li {
+.glassCard .featuresList li {
     margin-bottom: 10px;
     line-height: 1.5;
-  }
+}
 
-  .glassCard form {
+.glassCard form {
     display: flex;
     flex-direction: column;
     gap: 18px;
     margin-top: 24px;
     width: 100%;
     max-width: 400px;
-  }
+}
 
-  .glassCard input[type="text"],
-  .glassCard input[type="date"],
-  .glassCard input[type="time"] {
+.glassCard input[type="text"],
+.glassCard input[type="date"],
+.glassCard input[type="time"] {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #cfd8dc;
@@ -125,14 +125,14 @@
     color: #222;
     font-size: 1rem;
     transition: border-color 0.2s;
-  }
+}
 
-  .glassCard input:focus {
+.glassCard input:focus {
     border-color: #3366cc;
     outline: none;
-  }
+}
 
-  .glassCard button[type="submit"] {
+.glassCard button[type="submit"] {
     padding: 12px;
     border-radius: 8px;
     border: none;
@@ -143,20 +143,20 @@
     cursor: pointer;
     transition: background 0.2s;
     margin-top: 8px;
-  }
+}
 
-  .glassCard button[type="submit"]:hover {
+.glassCard button[type="submit"]:hover {
     background: #003399;
-  }
+}
 
-  ul #lista-monitorias {
+ul#lista-monitorias {
     list-style: none;
     padding: 0;
     margin: 24px 0 0 0;
     max-width: 700px;
-  }
+}
 
-  ul#lista-monitorias li {
+ul#lista-monitorias li {
     background: #fff;
     margin-bottom: 14px;
     padding: 16px 20px;
@@ -168,17 +168,35 @@
     gap: 4px;
     border: 1px solid #e0e0e0;
     transition: border-color 0.2s;
-  }
+}
 
-  ul#lista-monitorias li:hover {
+ul#lista-monitorias li:hover {
     border-color: #b0b0b0;
-  }
+}
 
-  .link {
+.link {
     text-decoration: none;
     color: black;
-  }
-  .link:hover {
+}
+.link:hover {
     text-decoration: underline;
     color: #3366cc;
-  }
+}
+
+.btn-excluir {
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 0.98rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    align-self: flex-end;
+    transition: background 0.2s;
+}
+
+.btn-excluir:hover {
+    background: #b71c1c;
+}

@@ -24,7 +24,7 @@ function adicionarMonitoria(event) {
     salvarMonitorias(monitorias);
 
     alert('Monitoria adicionada com sucesso!');
-    window.location.href = 'page2.html'; // volta para a página 2
+    window.location.href = 'monitoriasProximas.html'; // volta para a página 2
 }
 
 // lista de eventos para a página 3
@@ -42,10 +42,32 @@ function atualizarListaMonitorias() {
         listaMonitorias.innerHTML = '';
         monitorias.forEach((monitoria, index) => {
             const li = document.createElement('li');
-            li.textContent = `${monitoria.disciplina} - ${monitoria.monitor} (${monitoria.data} às ${monitoria.horarioInicio}) - Local: ${monitoria.local || ''}`; // Mostra local
+            li.innerHTML = `
+                <strong>${monitoria.disciplina}</strong> - ${monitoria.monitor}
+                <br>
+                <span>${monitoria.data} às ${monitoria.horarioInicio} - Local: ${monitoria.local || ''}</span>
+            `;
+
+            const btnExcluir = document.createElement('button');
+            btnExcluir.textContent = 'Excluir';
+            btnExcluir.className = 'btn-excluir';
+            btnExcluir.onclick = function() {
+                if (confirm('Tem certeza que deseja excluir esta monitoria?')) {
+                    excluirMonitoria(index);
+                }
+            };
+
+            li.appendChild(btnExcluir);
             listaMonitorias.appendChild(li);
         });
     }
+}
+
+function excluirMonitoria(indice) {
+    const monitorias = carregarMonitorias();
+    monitorias.splice(indice, 1);
+    salvarMonitorias(monitorias);
+    atualizarListaMonitorias();
 }
 
 // Inicialização para a pagina 2
