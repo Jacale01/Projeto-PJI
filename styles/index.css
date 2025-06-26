@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-image: url(../img/livros.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .menu-icone {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-icon {
+    background: #ccc;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    padding: 20px;
+  }
+  
+  .glassCard {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    padding: 28px 24px 24px 24px;
+    margin-top: 6rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 1.5px 8px rgba(51,102,204,0.04);
+    border: 1.5px solid #e3e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+
+  .glassCard h1,
+  .glassCard .welcomeTitle {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #222;
+    letter-spacing: 0.5px;
+  }
+
+  .glassCard p {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .glassCard .featuresList {
+    margin: 24px 0 0 0;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #222;
+  }
+
+  .glassCard .featuresList li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .glassCard form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 24px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .glassCard input[type="text"],
+  .glassCard input[type="date"],
+  .glassCard input[type="time"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cfd8dc;
+    background: #f7fafd;
+    color: #222;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+
+  .glassCard input:focus {
+    border-color: #3366cc;
+    outline: none;
+  }
+
+  .glassCard button[type="submit"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #3366cc;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+  }
+
+  .glassCard button[type="submit"]:hover {
+    background: #003399;
+  }
+
+  ul #lista-monitorias {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+    max-width: 700px;
+  }
+
+  ul#lista-monitorias li {
+    background: #fff;
+    margin-bottom: 14px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid #e0e0e0;
+    transition: border-color 0.2s;
+  }
+
+  ul#lista-monitorias li:hover {
+    border-color: #b0b0b0;
+  }
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+  .link:hover {
+    text-decoration: underline;
+    color: #3366cc;
+  }
